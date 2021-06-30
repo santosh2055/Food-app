@@ -33,26 +33,3 @@ class Pizas with ChangeNotifier {
   }
 }
 
-// Future<void> fetchproduct() async {
-//   var url = Uri.parse(
-//       'https://shopping-8089f-default-rtdb.firebaseio.com/products.json');
-//   try {
-//     final response = await http.get(url);
-//     final decodedData = json.decode(response.body) as Map<String, dynamic>;
-//     final List<Product> loadedProduct = [];
-//     decodedData.forEach((prodId, prodData) {
-//       loadedProduct.add(Product(
-//         id: prodId,
-//         title: prodData['title'],
-//         description: prodData['description'],
-//         imageurl: prodData['imageurl'],
-//         price: prodData['price'],
-//       ));
-//     });
-//     _items = loadedProduct;
-//     notifyListeners();
-//   } catch (error) {
-//     throw error;
-//   }
-// }
-// recipes[0].title
